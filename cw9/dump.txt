@@ -1,0 +1,890 @@
+[1mtrue.[0m
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:41:
+	'/home/students/s416204/Desktop/deklaratywne_prolog/dane.pl':41:53: Illegal UTF-8 continuation
+[0m[1mtrue.[0m
+
+student(X,Y,Z,C,informatyka,D).
+
+
+X = kaczmarek,
+Y = janina,
+Z = 1989,
+C = poznan,
+D = pp ;[1m;[0m
+X = nowak,
+Y = anna,
+Z = 1988,
+C = olsztyn,
+D = uwm ;[1m;[0m
+X = jurkowski,
+Y = jerzy,
+Z = 1990,
+C = poznan,
+D = uam ;[1m;[0m
+X = zemski,
+Y = piotr,
+Z = 1991,
+C = poznan,
+D = ue ;[1m;[0m
+X = makowska,
+Y = zuzanna,
+Z = 1990,
+C = poznan,
+D = pp ;[1m;[0m
+X = ratajczak,
+Y = agata,
+Z = 1992,
+C = poznan,
+D = uam.
+
+student(X,Y,Z,C,A,B),A\Poznan.
+
+
+[31;1mERROR: Syntax error: Operator expected
+ERROR: student(X,Y,Z,C,A,B),
+ERROR: ** here **
+ERROR: A\Poznan . 
+[0mstudent(X,Y,Z,C,A,B),C\Poznan.
+
+
+[31;1mERROR: Syntax error: Operator expected
+ERROR: student(X,Y,Z,C,A,B),
+ERROR: ** here **
+ERROR: C\Poznan . 
+[0mstudent(X,Y,Z,C,A,B),C\=Poznan.
+
+
+[1;31mfalse.[0m
+
+student(X,Y,Z,C,A),C\=Poznan.
+
+
+[31;1mERROR: Undefined procedure: student/5
+ERROR:     However, there are definitions for:
+ERROR:         student/6
+[0m[1;31mfalse.[0m
+
+student(X,Y,Z,C,A,P),C\=Poznan.
+
+
+[1;31mfalse.[0m
+
+student(X,Y,Z,C,A,P),C\=Poznan.
+
+
+[1;31mfalse.[0m
+
+student(A,B,_,_,informatyka,_).
+
+
+A = kaczmarek,
+B = janina ;[1m;[0m
+A = nowak,
+B = anna ;[1m;[0m
+A = jurkowski,
+B = jerzy ;[1m;[0m
+A = zemski,
+B = piotr ;[1m;[0m
+A = makowska,
+B = zuzanna ;[1m;[0m
+A = ratajczak,
+B = agata.
+
+student(A,B,C,D,E),C\=Poznan.
+
+
+[31;1mERROR: Undefined procedure: student/5
+ERROR:     However, there are definitions for:
+ERROR:         student/6
+[0m[1;31mfalse.[0m
+
+student(A,B,C,D,E.FF),C\=Poznan.
+
+
+[31;1mERROR: Undefined procedure: student/5
+ERROR:     However, there are definitions for:
+ERROR:         student/6
+[0m[1;31mfalse.[0m
+
+student(A,B,C,D,E,F),C\=Poznan.
+
+
+[1;31mfalse.[0m
+
+student(A,B,C,D,E,F),C\=poznan.
+
+
+A = kowalski,
+B = jan,
+C = 1990,
+D = poznan,
+E = matematyka,
+F = uam ;[1m;[0m
+A = kosowski,
+B = jan,
+C = 1991,
+D = poznan,
+E = matematyka,
+F = ae ;[1m;[0m
+A = kowalski,
+B = marek,
+C = 1993,
+D = poznan,
+E = matematyka,
+F = pp ;[1m;[0m
+A = kaczmarek,
+B = janina,
+C = 1989,
+D = poznan,
+E = informatyka,
+F = pp ;[1m;[0m
+A = nowak,
+B = anna,
+C = 1988,
+D = olsztyn,
+E = informatyka,
+F = uwm ;[1m;[0m
+A = jurkowski,
+B = jerzy,
+C = 1990,
+D = poznan,
+E = informatyka,
+F = uam ;[1m;[0m
+A = wolski,
+B = maciej,
+C = 1990,
+D = poznan,
+E = matematyka,
+F = pp ;[1m;[0m
+A = kot,
+B = stefan,
+C = 1989,
+D = warszawa,
+E = matematyka,
+F = uw ;[1m;[0m
+A = typowski,
+B = adam,
+C = 1990,
+D = krakow,
+E = matematyka,
+F = uj ;[1m;[0m
+A = zemski,
+B = piotr,
+C = 1991,
+D = poznan,
+E = informatyka,
+F = ue ;[1m;[0m
+A = makowska,
+B = zuzanna,
+C = 1990,
+D = poznan,
+E = informatyka,
+F = pp ;[1m;[0m
+A = ratajczak,
+B = agata,
+C = 1992,
+D = poznan,
+E = informatyka,
+F = uam.
+
+student(A,B,C,_,_,_),C>1990.
+
+
+A = kosowski,
+B = jan,
+C = 1991 ;[1m;[0m
+A = kowalski,
+B = marek,
+C = 1993 ;[1m;[0m
+A = zemski,
+B = piotr,
+C = 1991 ;[1m;[0m
+A = ratajczak,
+B = agata,
+C = 1992.
+
+student(A,B,_,_,_,D),D==pp.
+
+
+A = kowalski,
+B = marek,
+D = pp [1m.[0m
+
+student(A,B,_,_,_,D),D=pp.
+
+
+A = kowalski,
+B = marek,
+D = pp ;[1m;[0m
+A = kaczmarek,
+B = janina,
+D = pp ;[1m;[0m
+A = wolski,
+B = maciej,
+D = pp ;[1m;[0m
+A = makowska,
+B = zuzanna,
+D = pp ;[1m;[0m
+[1;31mfalse.[0m
+
+student(A,B,_,_,_,D),member(D,['pp','uam'].
+
+
+[31;1mERROR: Syntax error: Operator expected
+ERROR: student(A,B,_,_,_,D),member(D,['pp','uam']
+ERROR: ** here **
+ERROR:  . 
+[0mstudent(A,B,_,_,_,D),member(D,['pp','uam']).
+
+
+A = kowalski,
+B = jan,
+D = uam ;[1m;[0m
+A = kowalski,
+B = marek,
+D = pp ;[1m;[0m
+A = kaczmarek,
+B = janina,
+D = pp ;[1m;[0m
+A = jurkowski,
+B = jerzy,
+D = uam ;[1m;[0m
+A = wolski,
+B = maciej,
+D = pp ;[1m;[0m
+A = makowska,
+B = zuzanna,
+D = pp ;[1m;[0m
+A = ratajczak,
+B = agata,
+D = uam.
+
+student(_,_,_,lodz,matematyka,_).
+
+
+[1;31mfalse.[0m
+
+student(kowalski,jan,_,_,matematyka,_).
+
+
+[1mtrue [0m.[1m.[0m
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:41:
+	'/home/students/s416204/Desktop/deklaratywne_prolog/dane.pl':41:53: Illegal UTF-8 continuation
+[0m[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:54:
+	Singleton variables: [A,B]
+[0m[31;1mERROR: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:54:
+	No permission to modify static procedure `(;)/2'
+	Defined at /usr/lib/swi-prolog/boot/init.pl:209
+[0m[1mtrue.[0m
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:41:
+	'/home/students/s416204/Desktop/deklaratywne_prolog/dane.pl':41:53: Illegal UTF-8 continuation
+[0m[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:54:
+	Singleton variables: [A,B]
+[0m[31;1mERROR: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:54:
+	No permission to modify static procedure `(;)/2'
+	Defined at /usr/lib/swi-prolog/boot/init.pl:209
+[0m[1mtrue.[0m
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:41:
+	'/home/students/s416204/Desktop/deklaratywne_prolog/dane.pl':41:53: Illegal UTF-8 continuation
+[0m[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:54:
+	Singleton variables: [A,B]
+[0m[1mtrue.[0m
+
+studentPoznan
+.
+
+
+[1mtrue [0m.[1m.[0m
+
+studentPoznan.
+
+
+[1mtrue [0m[1m.[0m
+
+studentPoznan.
+
+
+[1mtrue [0m.[1m.[0m
+
+studentPoznan.
+
+
+[1mtrue [0m.[1m.[0m
+
+studentPoznan(X,Y).
+
+
+[31;1mERROR: Undefined procedure: studentPoznan/2
+ERROR:     However, there are definitions for:
+ERROR:         studentPoznan/0
+[0m[1;31mfalse.[0m
+
+studentPoznan(X,Y).
+
+
+[31;1mERROR: Undefined procedure: studentPoznan/2
+ERROR:     However, there are definitions for:
+ERROR:         studentPoznan/0
+[0m[1;31mfalse.[0m
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:41:
+	'/home/students/s416204/Desktop/deklaratywne_prolog/dane.pl':41:53: Illegal UTF-8 continuation
+[0m[1mtrue.[0m
+
+studentPoznan(X,Y).
+
+
+X = kowalski,
+Y = jan ;[1m;[0m
+X = kosowski,
+Y = jan ;[1m;[0m
+X = kowalski,
+Y = marek ;[1m;[0m
+X = kaczmarek,
+Y = janina ;[1m;[0m
+X = jurkowski,
+Y = jerzy ;[1m;[0m
+X = wolski,
+Y = maciej ;[1m;[0m
+X = zemski,
+Y = piotr ;[1m;[0m
+X = makowska,
+Y = zuzanna ;[1m;[0m
+X = ratajczak,
+Y = agata.
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:41:
+	'/home/students/s416204/Desktop/deklaratywne_prolog/dane.pl':41:53: Illegal UTF-8 continuation
+[0m[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:55:
+	Singleton variables: [B]
+[0m[1mtrue.[0m
+
+
+matem       matematyka
+matem(A).
+
+
+A = kowalski ;[1m;[0m
+A = kosowski ;[1m;[0m
+A = kowalski ;[1m;[0m
+A = wolski ;[1m;[0m
+A = kot ;[1m;[0m
+A = typowski.
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:41:
+	'/home/students/s416204/Desktop/deklaratywne_prolog/dane.pl':41:53: Illegal UTF-8 continuation
+[0m[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:55:
+	Singleton variables: [B]
+[0m[1mtrue.[0m
+
+rodzic(marek,piotr).
+
+
+[1;31mfalse.[0m
+
+rodzic(piotr,marek).
+
+
+[1mtrue [0m.[1m.[0m
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:41:
+	'/home/students/s416204/Desktop/deklaratywne_prolog/dane.pl':41:53: Illegal UTF-8 continuation
+[0m[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:55:
+	Singleton variables: [B]
+[0m[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:57:
+	Singleton variables: [A]
+[0m[1mtrue.[0m
+
+rodzic(piotr).
+
+
+[31;1mERROR: Undefined procedure: rodzic/1
+ERROR:     However, there are definitions for:
+ERROR:         rodzic/2
+[0m[1;31mfalse.[0m
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:41:
+	'/home/students/s416204/Desktop/deklaratywne_prolog/dane.pl':41:53: Illegal UTF-8 continuation
+[0m[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:55:
+	Singleton variables: [B]
+[0m[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:57:
+	Singleton variables: [A]
+[0m[1mtrue.[0m
+
+rodzic1(piotr).
+
+
+[31;1mERROR: Undefined procedure: rodzic1/1
+ERROR:     However, there are definitions for:
+ERROR:         rodzic/2
+[0m[1;31mfalse.[0m
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:41:
+	'/home/students/s416204/Desktop/deklaratywne_prolog/dane.pl':41:53: Illegal UTF-8 continuation
+[0m[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:55:
+	Singleton variables: [B]
+[0m[1mtrue.[0m
+
+rodzic1(piotr).
+
+
+[31;1mERROR: Undefined procedure: rodzic1/1
+ERROR:     However, there are definitions for:
+ERROR:         rodzic/2
+[0m[1;31mfalse.[0m
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:41:
+	'/home/students/s416204/Desktop/deklaratywne_prolog/dane.pl':41:53: Illegal UTF-8 continuation
+[0m[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:55:
+	Singleton variables: [B]
+[0m[1mtrue.[0m
+
+rodzic(piotr).
+
+
+[31;1mERROR: Undefined procedure: rodzic/1
+ERROR:     However, there are definitions for:
+ERROR:         rodzic/2
+[0m[1;31mfalse.[0m
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:41:
+	'/home/students/s416204/Desktop/deklaratywne_prolog/dane.pl':41:53: Illegal UTF-8 continuation
+[0m[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:55:
+	Singleton variables: [B]
+[0m[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:57:
+	Singleton variables: [X]
+[0m[1mtrue.[0m
+
+rodzic(piotr).
+
+
+[31;1mERROR: Undefined procedure: rodzic/1
+ERROR:     However, there are definitions for:
+ERROR:         rodzic/2
+[0m[1;31mfalse.[0m
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:41:
+	'/home/students/s416204/Desktop/deklaratywne_prolog/dane.pl':41:53: Illegal UTF-8 continuation
+[0m[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:55:
+	Singleton variables: [B]
+[0m[1mtrue.[0m
+
+rodzic(piotr).
+
+
+[31;1mERROR: Undefined procedure: rodzic/1
+ERROR:     However, there are definitions for:
+ERROR:         rodzic/2
+[0m[1;31mfalse.[0m
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:41:
+	'/home/students/s416204/Desktop/deklaratywne_prolog/dane.pl':41:53: Illegal UTF-8 continuation
+[0m[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:55:
+	Singleton variables: [B]
+[0m[1mtrue.[0m
+
+rodzic(piotr).
+
+
+[31;1mERROR: Undefined procedure: rodzic/1
+ERROR:     However, there are definitions for:
+ERROR:         rodzic/2
+[0m[1;31mfalse.[0m
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:41:
+	'/home/students/s416204/Desktop/deklaratywne_prolog/dane.pl':41:53: Illegal UTF-8 continuation
+[0m[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:55:
+	Singleton variables: [B]
+[0m[1mtrue.[0m
+
+rodzic(piotr).
+
+
+[31;1mERROR: Undefined procedure: rodzic/1
+ERROR:     However, there are definitions for:
+ERROR:         rodzic/2
+[0m[1;31mfalse.[0m
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:41:
+	'/home/students/s416204/Desktop/deklaratywne_prolog/dane.pl':41:53: Illegal UTF-8 continuation
+[0m[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:55:
+	Singleton variables: [B]
+[0m[1mtrue.[0m
+
+rodzic(piotr).
+
+
+[31;1mERROR: Undefined procedure: rodzic/1
+ERROR:     However, there are definitions for:
+ERROR:         rodzic/2
+[0m[1;31mfalse.[0m
+
+ojciec(piotr).
+
+
+[1mtrue [0m.[1m.[0m
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:41:
+	'/home/students/s416204/Desktop/deklaratywne_prolog/dane.pl':41:53: Illegal UTF-8 continuation
+[0m[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:55:
+	Singleton variables: [B]
+[0m[1mtrue.[0m
+
+nwd(12,14,2).
+
+
+[1mtrue [0m.[1m.[0m
+
+nwd(12,14,X).
+
+
+X = 2 ;[1m;[0m
+[1;31mfalse.[0m
+
+nwd(6,36,X).
+
+
+X = 6 ;[1m;[0m
+[1;31mfalse.[0m
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:55:
+	Singleton variables: [B]
+[0m[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:79:
+	Singleton variables: [B]
+[0m[31;1mERROR: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:79:
+	Full stop in clause-body?  Cannot redefine ,/2
+[0m[1mtrue.[0m
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:55:
+	Singleton variables: [B]
+[0m[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:79:
+	Singleton variables: [B]
+[0m[1mtrue.[0m
+
+olaJarosze(X).
+
+
+[31;1mERROR: Undefined procedure: olaJarosze/1
+ERROR:     However, there are definitions for:
+ERROR:         olaJarosze/2
+[0m[1;31mfalse.[0m
+
+olaJarosze(X).
+
+
+[31;1mERROR: Undefined procedure: olaJarosze/1
+ERROR:     However, there are definitions for:
+ERROR:         olaJarosze/2
+[0m[1;31mfalse.[0m
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:55:
+	Singleton variables: [B]
+[0m[1mtrue.[0m
+
+olaJarosze(X).
+
+
+[31;1mERROR: Undefined procedure: olaJarosze/1
+ERROR:     However, there are definitions for:
+ERROR:         olaJarosze/2
+[0m[1;31mfalse.[0m
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:55:
+	Singleton variables: [B]
+[0m[1mtrue.[0m
+
+olaJarosze(X).
+
+
+[31;1mERROR: Undefined procedure: olaJarosze/1
+ERROR:     However, there are definitions for:
+ERROR:         olaJarosze/2
+[0m[1;31mfalse.[0m
+
+olaJarosze().
+
+
+[31;1mERROR: Undefined procedure: olaJarosze/0
+ERROR:     However, there are definitions for:
+ERROR:         olaJarosze/2
+[0m[1;31mfalse.[0m
+
+olaJarosze(X,C).
+
+
+X = C, C = 'Ola' ;[1m;[0m
+X = 'Ola',
+C = 'Paweł'.
+
+olaJarosze('Ola',C).
+
+
+C = 'Ola' [1m.[0m
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:55:
+	Singleton variables: [B]
+[0m[1mtrue.[0m
+
+olaJarosze(C).
+
+
+[31;1mERROR: Undefined procedure: olaJarosze/1
+ERROR:     However, there are definitions for:
+ERROR:         olaJarosze/2
+[0m[1;31mfalse.[0m
+
+olaJarosze('Ola',C).
+
+
+C = 'Paweł'.
+
+olaJarosze(C).
+
+
+[31;1mERROR: Undefined procedure: olaJarosze/1
+ERROR:     However, there are definitions for:
+ERROR:         olaJarosze/2
+[0m[1;31mfalse.[0m
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:55:
+	Singleton variables: [B]
+[0m[1mtrue.[0m
+
+olaJarosze(C).
+
+
+C = 'Paweł'.
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:55:
+	Singleton variables: [B]
+[0m[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:79:
+	Singleton variables: [C]
+[0m[1mtrue.[0m
+
+olaJarosze('Ola',C).
+
+
+[1mtrue.[0m
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:55:
+	Singleton variables: [B]
+[0m[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:79:
+	Singleton variables: [C]
+[0m[1mtrue.[0m
+
+lubi('Ola',C).
+
+
+[1mtrue.[0m
+
+lubi('Ola',X).
+
+
+[1mtrue.[0m
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:55:
+	Singleton variables: [B]
+[0m[1mtrue.[0m
+
+lubi('Ola',X).
+
+
+X = 'Paweł'.
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:55:
+	Singleton variables: [B]
+[0m[31;1mERROR: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:80:
+	No permission to modify static procedure `(;)/2'
+	Defined at /usr/lib/swi-prolog/boot/init.pl:209
+[0m[1mtrue.[0m
+
+lubi('Ola',X).
+
+
+X = 'Paweł'.
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:55:
+	Singleton variables: [B]
+[0m[31;1mERROR: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:80:
+	No permission to modify static procedure `(;)/2'
+	Defined at /usr/lib/swi-prolog/boot/init.pl:209
+[0m[31;1mERROR: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:82:5: Syntax error: Unexpected end of file
+[0m[1mtrue.[0m
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:55:
+	Singleton variables: [B]
+[0m[31;1mERROR: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:82:5: Syntax error: Unexpected end of file
+[0m[1mtrue.[0m
+
+lubi('Ola',X).
+
+
+X = 'Paweł'.
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:55:
+	Singleton variables: [B]
+[0m[31;1mERROR: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:81:62: Syntax error: Operator expected
+[0m[1mtrue.[0m
+
+lubi('Ola',X).
+
+
+X = 'Paweł'.
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:55:
+	Singleton variables: [B]
+[0m[1mtrue.[0m
+
+lubi('Iza',X).
+
+
+X = 'Ola' [1m.[0m
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:55:
+	Singleton variables: [B]
+[0m[1mtrue.[0m
+
+lubi('Iza',X).
+
+
+X = 'Ola' ;[1m;[0m
+X = 'Iza' ;[1m;[0m
+X = 'Paweł' ;[1m;[0m
+X = 'Ola' ;[1m;[0m
+[1;31mfalse.[0m
+
+lubi('Iza',X).
+
+
+X = 'Ola' ;[1m;[0m
+X = 'Iza' ;[1m;[0m
+X = 'Paweł' ;[1m;[0m
+X = 'Ola' ;[1m;[0m
+[1;31mfalse.[0m
+
+['dane.pl'].
+
+
+[31mWarning: /home/students/s416204/Desktop/deklaratywne_prolog/dane.pl:55:
+	Singleton variables: [B]
+[0m[1mtrue.[0m
+
+lubi('Iza',X).
+
+
+X = 'Ola' ;[1m;[0m
+X = 'Paweł' ;[1m;[0m
+X = 'Ola' ;[1m;[0m
+[1;31mfalse.[0m
+
+noprotocol();
+.
+
+
+[31;1mERROR: Syntax error: Unexpected `;' before `.'
+ERROR: noprotocol();
+ERROR: ** here **
+ERROR:  . 
+[0mnoprotocol().
+
+
